@@ -1,0 +1,21 @@
+body {
+    background-color: #33ae54;
+}
+
+header {
+    background-color: #fff;
+}
+
+header h1 {
+    margin: 10px;
+}
+
+.form-popup {
+     display: none;
+}
+   
+    /* position: fixed;
+    bottom: 0;
+     */
+    /* z-index: 9;
+}
