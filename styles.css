@@ -13,6 +13,12 @@ header h1 {
 .form-popup {
      display: none;
 }
+
+#shelf {
+    color: black;
+    border: black solid 5px;
+}
+
    
     /* position: fixed;
     bottom: 0;
