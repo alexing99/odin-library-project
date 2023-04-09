@@ -17,7 +17,16 @@ function toggleRead(index) {
 }
 
 const gbg = new Book("The Glass Bead Game", "Herman Hesse", "558", true);
+const agd = new Book("Against The Day", "Thomas Pynchon", "1055", true);
+const tim = new Book(
+  "The Invention of Morel",
+  "Adolfo Bioy Casares",
+  "103",
+  true
+);
 myLibrary.push(gbg);
+myLibrary.push(agd);
+myLibrary.push(tim);
 
 makeList();
 
@@ -41,6 +50,10 @@ function closeForm() {
   addBookToLibrary();
 }
 
+function closeForm2() {
+  document.getElementById("myForm").style.display = "none";
+}
+
 function delBook(index) {
   myLibrary.splice(index, 1);
   makeList();
@@ -56,10 +69,10 @@ function makeList() {
     spine.innerHTML = `<p>${book.title}</p>
             <p>${book.author}</p>
             <p>${book.pages + " pages"}</p>
-            <button onclick="toggleRead(${i})">${
+            <div><button class="toggle" onclick="toggleRead(${i})">${
       book.read ? "Read" : "Not Read Yet"
     }</p>
-            <button class="remove-btn" onclick="delBook(${i})">Remove</button>`;
+            <button class="remove-btn" onclick="delBook(${i})">Remove</button></div>`;
     spine.className = "spine-div";
     shelfBook.appendChild(spine);
   }

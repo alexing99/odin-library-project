@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="script.js"></script>
-    
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>Your Library................................................</h1>
+      <h1>Your Library................................................</h1>
     </div>
     <button id="new-book-butt" onclick="openForm()">ADD NEW BOOK</button>
     <div class="form-popup" id="myForm">
-        <form action="">
-            <h1>What's the Book?</h1>
+      <form action="">
+        <h1>What's the Book?</h1>
 
-            <label for="title">Title</label>
-            <input type="text" name="title" id="title" required> 
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required />
 
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author" required>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required />
 
-            <label for="pages">Pages</label>
-            <input type="number" name="pages" id="pages" required>
+        <label for="pages">Pages</label>
+        <input type="number" name="pages" id="pages" required />
 
-            <label for="read">Read?</label>
-            <input type="checkbox" name="read" id="read" required>
+        <label for="read">Read?</label>
+        <input type="checkbox" name="read" id="read" required />
 
-            <button type="submit" onclick="closeForm()">Add</button>
-        </form>
+        <button type="submit" onclick="closeForm()">Add</button>
+        <button type="button" onclick="closeForm2()">Cancel</button>
+      </form>
     </div>
-    <div id="shelf">
-            
-    </div>
-</body>
+    <div id="shelf"></div>
+  </body>
 </html>
